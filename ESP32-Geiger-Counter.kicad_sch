@@ -9920,7 +9920,7 @@
 		)
 		(uuid "81ae9686-18c1-41ad-80c3-af5d303a5e18")
 	)
-	(label "VSYS_SW"
+	(label "BATT"
 		(at 201.93 45.72 180)
 		(effects
 			(font
@@ -10866,7 +10866,7 @@
 				)
 			)
 		)
-		(property "Value" "1000V"
+		(property "Value" "US1M"
 			(at 359.41 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11374,7 +11374,7 @@
 				)
 			)
 		)
-		(property "Value" "5.7K"
+		(property "Value" "5.76K"
 			(at 138.938 129.794 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18768,7 +18768,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "30uF"
+		(property "Value" "22uF"
 			(at 189.23 105.4162 0)
 			(show_name no)
 			(do_not_autoplace no)
