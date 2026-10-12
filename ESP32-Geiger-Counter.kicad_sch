@@ -14848,7 +14848,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CPT_2207_95_SMT_TR:XDCR_CPT-2207-95-SMT-TR"
+		(property "Footprint" "CPT_1203_78_SMT_TR:XDCR_CPT-1203-78-SMT-TR"
 			(at 283.845 40.64 90)
 			(hide yes)
 			(show_name no)
