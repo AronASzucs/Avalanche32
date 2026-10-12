@@ -7168,6 +7168,16 @@
 		)
 		(uuid "6967361d-9916-4f94-90be-6389210654af")
 	)
+	(text "(Between 8.4-6V)"
+		(exclude_from_sim no)
+		(at 243.84 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8875fdbe-b0c5-47b4-8927-702dc818bd37")
+	)
 	(text "Piezo"
 		(exclude_from_sim no)
 		(at 261.62 21.59 0)
@@ -7177,6 +7187,16 @@
 			)
 		)
 		(uuid "a2772a9e-738c-4df9-b83c-1bb19bc8409b")
+	)
+	(text "https://www.digikey.com/en/products/detail/bourns-inc/SRN6028C-3R9M/17126460"
+		(exclude_from_sim no)
+		(at 295.91 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c104a2c4-d160-4acf-93cd-78b5fb469761")
 	)
 	(text "Battery Connector "
 		(exclude_from_sim no)
@@ -7208,7 +7228,7 @@
 		)
 		(uuid "f81f0b9a-393b-4a11-a0c6-990d4205d293")
 	)
-	(text "3.3V Buck Converter"
+	(text "3.3V Buck Converter - P"
 		(exclude_from_sim no)
 		(at 251.206 93.98 0)
 		(effects
@@ -15136,7 +15156,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
 			(at 64.77 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -20540,7 +20560,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Bourns-SRN6028"
 			(at 298.45 111.76 0)
 			(hide yes)
 			(show_name no)
