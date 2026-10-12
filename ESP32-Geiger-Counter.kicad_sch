@@ -7291,12 +7291,6 @@
 		(uuid "3c0f37e8-58db-40f1-978b-749828a19bf7")
 	)
 	(junction
-		(at 205.74 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4fd45f4e-edc2-425f-ac7b-e7e0a1d3f64a")
-	)
-	(junction
 		(at 349.25 199.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7325,6 +7319,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d8c8073-270f-4fcc-89c6-011914c1790b")
+	)
+	(junction
+		(at 205.74 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a9e609e-95a5-45a4-ad99-cd1bdc15a666")
 	)
 	(junction
 		(at 323.85 199.39)
@@ -7367,6 +7367,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f894bf2-16d6-4ed2-bae7-a4067bb9f5ec")
+	)
+	(junction
+		(at 214.63 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91a33e66-dc09-4b51-828a-6b61fef4f709")
 	)
 	(junction
 		(at 273.05 233.68)
@@ -8790,6 +8796,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 121.92) (xy 214.63 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "721fdfb0-ac01-48cc-beeb-0300ce6bf4a9")
+	)
+	(wire
+		(pts
 			(xy 143.51 101.6) (xy 152.4 101.6)
 		)
 		(stroke
@@ -9180,6 +9196,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 124.46) (xy 215.9 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b952c16-9c16-4588-b63d-beef31e0a37b")
+	)
+	(wire
+		(pts
 			(xy 69.85 46.99) (xy 78.74 46.99)
 		)
 		(stroke
@@ -9430,6 +9456,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 115.57) (xy 214.63 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e89511-3f0f-49c9-89f0-c488887eb4c5")
+	)
+	(wire
+		(pts
 			(xy 69.85 123.19) (xy 69.85 125.73)
 		)
 		(stroke
@@ -9580,7 +9616,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 124.46) (xy 210.82 124.46)
+			(xy 205.74 124.46) (xy 214.63 124.46)
 		)
 		(stroke
 			(width 0)
@@ -10299,7 +10335,7 @@
 		(uuid "5ce9bbc3-eb43-4a0e-a736-d27403739dae")
 	)
 	(label "SYS"
-		(at 210.82 124.46 0)
+		(at 215.9 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11557,7 +11593,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 134.62 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -14533,7 +14569,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 134.62 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -14692,7 +14728,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP"
 			(at 341.63 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -15149,6 +15185,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 214.63 115.57 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6f1fadf1-fe1a-488e-b5a3-50d260db8ba8")
+		(property "Reference" "#PWR055"
+			(at 214.63 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.884 111.506 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d0485f4a-87e5-42e5-a10e-2366a4638830")
+		)
+		(instances
+			(project "ESP32-Geiger-Counter"
+				(path "/1d04c1b6-b1c1-45fc-a2be-06365cafa415"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Zener")
 		(at 402.59 215.9 270)
 		(unit 1)
@@ -15261,7 +15374,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 81.026 233.426 90)
 			(hide yes)
 			(show_name no)
@@ -15331,7 +15444,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "44uF"
+		(property "Value" "22uF"
 			(at 207.772 117.856 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15342,7 +15455,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 205.74 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -15421,7 +15534,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 463.804 198.374 90)
 			(hide yes)
 			(show_name no)
@@ -15580,7 +15693,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
 			(at 273.05 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -17092,7 +17205,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 208.28 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -18573,7 +18686,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 105.41 227.33 0)
 			(hide yes)
 			(show_name no)
@@ -18807,7 +18920,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 81.534 236.474 90)
 			(hide yes)
 			(show_name no)
@@ -19282,7 +19395,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 437.134 198.374 90)
 			(hide yes)
 			(show_name no)
@@ -20667,7 +20780,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 134.62 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -21594,6 +21707,87 @@
 			(project "ESP32-Geiger-Counter"
 				(path "/1d04c1b6-b1c1-45fc-a2be-06365cafa415"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 214.63 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff652977-19f4-4308-a9e2-c2af17c9e726")
+		(property "Reference" "C32"
+			(at 217.932 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 216.662 117.856 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 214.63 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 214.63 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "664ee21f-be23-4c09-98fe-bf8939b8f13a")
+		)
+		(pin "1"
+			(uuid "f8087398-84c4-439c-b41b-68e84de22ae3")
+		)
+		(instances
+			(project "ESP32-Geiger-Counter"
+				(path "/1d04c1b6-b1c1-45fc-a2be-06365cafa415"
+					(reference "C32")
 					(unit 1)
 				)
 			)
