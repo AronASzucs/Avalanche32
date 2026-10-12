@@ -8176,6 +8176,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 87.63) (xy 180.34 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "354452c3-b076-4550-ab81-8bc7ef35958d")
+	)
+	(wire
+		(pts
 			(xy 435.61 234.95) (xy 445.77 234.95)
 		)
 		(stroke
@@ -9126,6 +9136,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 87.63) (xy 173.99 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8601862e-8e1e-453d-b6f1-226ec5dcc708")
+	)
+	(wire
+		(pts
 			(xy 251.46 130.81) (xy 251.46 133.35)
 		)
 		(stroke
@@ -9956,7 +9976,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 104.14) (xy 180.34 93.98)
+			(xy 180.34 104.14) (xy 180.34 95.25)
 		)
 		(stroke
 			(width 0)
@@ -9976,7 +9996,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 101.6) (xy 173.99 93.98)
+			(xy 173.99 101.6) (xy 173.99 95.25)
 		)
 		(stroke
 			(width 0)
@@ -10991,7 +11011,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 180.34 90.17 180)
+		(at 180.34 91.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11001,7 +11021,7 @@
 		(dnp no)
 		(uuid "0658136e-a703-40eb-8b1f-13ddc3c1ba83")
 		(property "Reference" "R9"
-			(at 184.15 89.662 0)
+			(at 184.15 90.932 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11011,7 +11031,7 @@
 			)
 		)
 		(property "Value" "2.2K"
-			(at 184.658 91.694 0)
+			(at 184.658 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11021,7 +11041,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 179.324 89.916 90)
+			(at 179.324 91.186 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11032,7 +11052,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 90.17 0)
+			(at 180.34 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11043,7 +11063,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 180.34 90.17 0)
+			(at 180.34 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13146,7 +13166,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SRP4020TA-1R0M:IND_SRP4020TA-1R0M"
 			(at 195.58 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -16173,7 +16193,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 173.99 90.17 180)
+		(at 173.99 91.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16183,7 +16203,7 @@
 		(dnp no)
 		(uuid "87f8960e-2404-4d44-95c1-03bda3a42988")
 		(property "Reference" "R8"
-			(at 171.45 88.646 0)
+			(at 171.45 89.916 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16193,7 +16213,7 @@
 			)
 		)
 		(property "Value" "2.2K"
-			(at 170.18 90.678 0)
+			(at 170.18 91.948 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16203,7 +16223,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 172.974 89.916 90)
+			(at 172.974 91.186 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16214,7 +16234,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 90.17 0)
+			(at 173.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16225,7 +16245,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 173.99 90.17 0)
+			(at 173.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1,4 +1,5 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "footprints") (type "KiCad") (uri "${KIPRJMOD}/libs/UCC27517/footprints.pretty") (options "") (descr ""))
+	(lib (name "UCC27517") (type "KiCad") (uri "${KIPRJMOD}/libs/UCC27517/footprints.pretty") (options "") (descr ""))
+	(lib (name "SRP4020TA-1R0M") (type "KiCad") (uri "${KIPRJMOD}/libs/SRP4020TA-1R0M/footprints.pretty") (options "") (descr ""))
 )
