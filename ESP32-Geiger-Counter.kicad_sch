@@ -13712,7 +13712,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 317.5 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -17712,7 +17712,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical"
+		(property "Footprint" "footprints:OLED_2.42in_SSD1309_SPI_7pin"
 			(at 344.17 40.64 0)
 			(hide yes)
 			(show_name no)
