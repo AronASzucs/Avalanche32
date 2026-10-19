@@ -521,7 +521,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "Gerbers/",
+      "plot": "Avalanche32Gerber/",
       "specctra_dsn": "",
       "vrml": ""
     },
