@@ -18582,7 +18582,7 @@
 		(property "Reference" "J1"
 			(at 6.35 1.555 0)
 			(layer "B.SilkS")
-			(uuid "10153bda-99e0-4756-8897-7a8ef204b1de")
+			(uuid "9e226d32-46e0-442e-b95b-4ab0be915980")
 			(effects
 				(font
 					(size 1 1)
@@ -18594,7 +18594,7 @@
 		(property "Value" "2s1p Lipo Battery Pack (8.4V-6V)"
 			(at 1.25 -10.4 0)
 			(layer "B.Fab")
-			(uuid "98aa4bfb-33a0-4e49-b64a-135c4b4e600a")
+			(uuid "b9a14217-9cee-4487-9e89-960f9893f625")
 			(effects
 				(font
 					(size 1 1)
@@ -18607,7 +18607,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "eb754874-80a1-44af-b322-1401b7a1d7bc")
+			(uuid "b92bbd2e-5f17-4123-bf6c-e244aa519870")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18619,7 +18619,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "1490d12b-95b6-4bd6-9b53-5d3e723da947")
+			(uuid "552bc854-4119-4cff-87a8-8fb3ae4d08f1")
 			(effects
 				(font
 					(size 1.27 1.27)
