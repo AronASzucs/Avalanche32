@@ -16141,7 +16141,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 386.334 203.454 90)
 			(hide yes)
 			(show_name no)
@@ -21763,7 +21763,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "2.2nF"
 			(at 360.426 248.158 0)
 			(show_name no)
 			(do_not_autoplace no)
