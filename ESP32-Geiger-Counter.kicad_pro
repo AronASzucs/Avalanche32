@@ -669,7 +669,7 @@
         "uuid": "1d04c1b6-b1c1-45fc-a2be-06365cafa415"
       }
     ],
-    "used_designators": "",
+    "used_designators": "TP_HV_SENSE1,TP1-4,TP_PULSE1,#PWR56-57,TP_3.3V1,TP_GND1",
     "variants": []
   },
   "sheets": [
