@@ -1405,6 +1405,17 @@
 			(uuid "45edc706-6ced-460b-8ab8-61800e7ff8b0")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libs/SRP4020TA-1R0M/SRP4020TA-1R0M.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Inductor_THT:L_Radial_D12.5mm_P7.00mm_Fastron_09HCP"
 		(layer "F.Cu")
@@ -10511,9 +10522,9 @@
 		(descr "Fuse SMD 2920 (7451 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size from: http://www.megastar.com/products/fusetronic/polyswitch/PDF/smd2920.pdf)")
 		(tags "fuse")
 		(property "Reference" "F1"
-			(at -3.2 4.1 180)
+			(at -3.2 4.1 0)
 			(layer "F.SilkS")
-			(uuid "d5b204a2-bf5c-408b-875a-eed2420f88c7")
+			(uuid "6deb7bd8-1a15-49f5-9de4-f9ec8995a3a8")
 			(effects
 				(font
 					(size 1 1)
@@ -10524,7 +10535,7 @@
 		(property "Value" "3A Polyfuse"
 			(at 0 3.68 90)
 			(layer "F.Fab")
-			(uuid "4d3a2510-87f2-4760-8dca-4dd3a686e50f")
+			(uuid "5543f3bd-e4b0-4c5c-8798-7627a5fddd94")
 			(effects
 				(font
 					(size 1 1)
@@ -10536,7 +10547,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7f692bfa-4416-4f12-a0b8-8033a3d9cfec")
+			(uuid "58f52430-f156-4987-aaef-eea864f6e6c1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10547,7 +10558,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "05a5e5a8-de81-4dc2-ad0e-5ce0392eb921")
+			(uuid "22476973-9d81-4179-9223-7eb3953b41ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10650,7 +10661,7 @@
 			(uuid "15f17270-b4bc-4ec5-9f6d-0a1e9b1da930")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_2920_7451Metric.step"
+		(model "${KIPRJMOD}/libs/2920L300_15DR/CHIP_2920L_7P98X5P44_LTF.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13586,6 +13597,17 @@
 			(uuid "7f80d4e9-3df8-44ca-91d4-a55513c182e9")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libs/UCC27517/DBV0005A.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -14513,15 +14535,15 @@
 			(uuid "9a4546d1-0451-4367-8b5e-2c711ff72df8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns-SRN6028.step"
+		(model "${KIPRJMOD}/libs/LIB_SRN6028C-3R9M/SRN6028C-3R9M/3D/SRN6028C-3R9M.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 180 -0)
 			)
 		)
 	)

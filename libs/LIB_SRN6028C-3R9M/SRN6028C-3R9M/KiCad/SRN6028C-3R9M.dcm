@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SRN6028C-3R9M
+D Inductor Power Semi-Shielded Wirewound 3.9uH 20% 100KHz 15Q-Factor Ferrite 3.3A 0.028Ohm DCR 2424 T/R
+K
+F http://www.bourns.com/docs/Product-Datasheets/SRN6028C.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,65 @@
+(Japanese_coding: sjis)
+(function "ECS_17847075"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-04-29-03:25:02)
+    (utime 2024-11-05-11:41:15)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "SRN6028C-3R9M")
+)
+
+
+(pinAssign "ECS_17847075"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-04-29-03:25:02)
+    (utime 2024-11-05-11:41:15)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_17847075")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "SRN6028C-3R9M")
+)
+
+
+(part "SRN6028C-3R9M"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-04-29-03:25:02)
+    (utime 2024-11-05-11:41:15)
+    (packageRef "SRN6028C-3R9M")
+    (pinAssignRef "ECS_17847075")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "L")
+    (property "description" "Inductor Power Semi-Shielded Wirewound 3.9uH 20% 100KHz 15Q-Factor Ferrite 3.3A 0.028Ohm DCR 2424 T/R")
+    (property "Mouser_Part_Number" "652-SRN6028C-3R9M")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/SRN6028C-3R9M?qs=ulEaXIWI0c8Z%2FwHLVLkWAg%3D%3D")
+    (property "Manufacturer_Name" "Bourns")
+    (property "Manufacturer_Part_Number" "SRN6028C-3R9M")
+    (property "Datasheet_Link" "http://www.bourns.com/docs/Product-Datasheets/SRN6028C.pdf")
+)
+
+

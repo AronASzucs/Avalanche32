@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SRN6028C3R9M"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SRN6028C3R9M")
+        (spec "default")
+    )
+)

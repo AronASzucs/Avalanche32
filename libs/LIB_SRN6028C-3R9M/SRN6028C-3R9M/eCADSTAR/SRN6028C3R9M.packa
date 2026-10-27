@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SRN6028C-3R9M"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-11-05-11:41:08)
+    (mountForm default
+        (footprintRef "SRN6028C3R9M")
+        (spec "System")
+    )
+)

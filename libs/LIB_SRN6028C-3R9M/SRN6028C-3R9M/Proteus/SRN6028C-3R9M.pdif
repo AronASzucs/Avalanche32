@@ -1,0 +1,123 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "SRN6028C-3R9M"
+   (description "Inductor Power Semi-Shielded Wirewound 3.9uH 20% 100KHz 15Q-Factor Ferrite 3.3A 0.028Ohm DCR 2424 T/R")
+   (family "IND")
+   (package "SRN6028C3R9M")
+   (attribute "Datasheet Link" "http://www.bourns.com/docs/Product-Datasheets/SRN6028C.pdf")
+   (attribute "Mouser Part Number" "652-SRN6028C-3R9M")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/SRN6028C-3R9M?qs=ulEaXIWI0c8Z%2FwHLVLkWAg%3D%3D")
+   (attribute "Manufacturer_Name" "Bourns")
+   (attribute "Manufacturer_Part_Number" "SRN6028C-3R9M")
+   (gate
+    (symbol "SRN6028C-3R9M")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "SRN6028C-3R9M"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 200 0) (pt 200 -52) (pt 300 48) (start -175.4) (sweep 177.7)) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 300 0) (pt 300 -52) (pt 400 48) (start -175.4) (sweep 177.7)) (pt 400 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 400 0) (pt 400 -52) (pt 500 48) (start -175.4) (sweep 177.7)) (pt 500 0))
+   )
+   (graphic
+    (stroke 10)
+    (path
+     (arc (pt 500 0) (pt 500 -52) (pt 600 48) (start -175.4) (sweep 177.7)) (pt 600 0))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SRN6028C3R9M"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3 -3)
+      (pt 3 -3)
+      (pt 3 3)
+      (pt -3 3)
+      (pt -3 -3))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.25 4.25)
+      (pt 4.25 4.25)
+      (pt 4.25 -4.25)
+      (pt -4.25 -4.25)
+      (pt -4.25 4.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1 3)
+      (pt 1 3))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1 -3)
+      (pt 1 -3))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.8 0)
+      (arc (pt -3.800 0.000) (pt -3.800 -0.050) (pt -3.700 0.050) (start 180.0) (sweep -180.0))
+      (pt -3.7 0)
+      (arc (pt -3.700 0.000) (pt -3.800 -0.050) (pt -3.700 0.050) (start 180.0) (sweep .0))
+      (pt -3.8 0))))
+   (leg 1 (pt -2.250 0.000) (padstack 0))
+   (leg 2 (pt 2.250 0.000) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 2.000 6.500 0 0 90.000))
+   )
+   (model "SRN6028C-3R9M.stp"
+    (euler 180 0 90)
+    (offset 0 -0.019999999552965164 1.4299999475479126)
+   )
+  )
+ )
+)

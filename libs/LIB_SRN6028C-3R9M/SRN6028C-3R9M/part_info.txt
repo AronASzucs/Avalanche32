@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=SRN6028C-3R9M
+PartCategory=Inductor
+PackageCategory=Other
+PinCount=2
+Version=3.2
+Released=2023-04-29 03:25:02
+Downloaded=2026-10-27 05:48:33
+3D=Y
