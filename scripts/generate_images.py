@@ -10,7 +10,8 @@ so save in KiCad first.
     python scripts/generate_images.py --skip-layers   # 3D renders only
 
 Output:
-    Images/3D/      top, bottom, side and isometric renders (PNG, transparent background)
+    Images/3D/      top, bottom, side and isometric renders (PNG, transparent background,
+                    zoomed to fit and cropped to the board; needs Pillow: pip install pillow)
     Images/Layers/  each layer, front/back composites and drill map (PNG)
 
 Layer plots are exported by KiCad as SVG and rasterised with PyMuPDF
@@ -65,7 +66,9 @@ LAYER_PLOTS = [
     ("Edge_Cuts", "Edge.Cuts", False),
 ]
 
-PLOT_BACKGROUND = "#001023"   # KiCad's PCB editor background; the default layer colours need a dark page
+FIT_FILL = 0.98               # 3D renders: fraction of the frame the board fills before cropping
+ALPHA_THRESHOLD = 8           # 3D renders: pixels at or below this alpha count as empty when cropping
+PLOT_BACKGROUND = "#001023"  # KiCad's PCB editor background; the default layer colours need a dark page
 CROP_MARGIN_MM = 2.0          # padding kept around the board outline in layer PNGs
 
 
@@ -100,21 +103,57 @@ def run(cmd):
     return True
 
 
+def content_bbox(png):
+    """Bounding box (x0, y0, x1, y1) of the non-transparent pixels, or None."""
+    from PIL import Image
+    with Image.open(png) as im:
+        return im.getchannel("A").point(lambda a: 255 if a > ALPHA_THRESHOLD else 0).getbbox()
+
+
+def fit_zoom(bbox, w, h):
+    """Zoom multiplier that makes the content just fill a w x h frame.
+
+    kicad-cli zooms about the image centre, so the side furthest from the centre limits it.
+    """
+    x0, y0, x1, y1 = bbox
+    half_w = max(w / 2 - x0, x1 - w / 2)
+    half_h = max(h / 2 - y0, y1 - h / 2)
+    return FIT_FILL * min(w / 2 / half_w, h / 2 / half_h)
+
+
 def render_3d(cli, board, quality):
+    from PIL import Image
     out = IMAGES / "3D"
     out.mkdir(parents=True, exist_ok=True)
+    # "high" forces KiCad's plated/bare copper mode, which draws all copper under the mask
+    # a fixed bare-copper brown; "user" (+ --floor) keeps the stackup finish colour instead
+    q = ["--quality", "user", "--floor"] if quality == "high" else ["--quality", quality]
     failed = []
-    for i, (name, args, zoom, w, h) in enumerate(VIEWS_3D, 1):
-        print(f"  [{i}/{len(VIEWS_3D)}] {name}")
-        png = out / f"{name}.png"
-        png.unlink(missing_ok=True)   # kicad-cli can exit 0 without writing (e.g. file open in a viewer)
-        # "high" forces KiCad's plated/bare copper mode, which draws all copper under the mask
-        # a fixed bare-copper brown; "user" (+ --floor) keeps the stackup finish colour instead
-        q = ["--quality", "user", "--floor"] if quality == "high" else ["--quality", quality]
-        run([cli, "pcb", "render", *q, "--zoom", str(zoom),
-             "-w", str(w), "-h", str(h), *args, "-o", str(png), str(board)])
-        if not png.is_file():
-            failed.append(name)
+    with tempfile.TemporaryDirectory() as tmp:
+        for i, (name, args, zoom, w, h) in enumerate(VIEWS_3D, 1):
+            print(f"  [{i}/{len(VIEWS_3D)}] {name}")
+            png = out / f"{name}.png"
+            png.unlink(missing_ok=True)   # kicad-cli can exit 0 without writing (e.g. file open in a viewer)
+
+            # Quick basic-quality pass to measure the content, then zoom so it fills the frame
+            probe = Path(tmp) / f"{name}.png"
+            run([cli, "pcb", "render", "--quality", "basic", "--zoom", str(zoom),
+                 "-w", str(w), "-h", str(h), *args, "-o", str(probe), str(board)])
+            bbox = content_bbox(probe) if probe.is_file() else None
+            if bbox:
+                zoom *= fit_zoom(bbox, w, h)
+
+            run([cli, "pcb", "render", *q, "--zoom", f"{zoom:.4f}",
+                 "-w", str(w), "-h", str(h), *args, "-o", str(png), str(board)])
+            if not png.is_file():
+                failed.append(name)
+                continue
+            # Crop away whatever empty margin is left on the non-limiting axis
+            bbox = content_bbox(png)
+            if bbox:
+                with Image.open(png) as im:
+                    im.load()
+                im.crop(bbox).save(png)
     if failed:
         print(f"  WARNING: not written: {', '.join(failed)} (close any viewer holding them and re-run)")
 
