@@ -1,6 +1,6 @@
 # Avalanche32: ESP32-S3 Geiger Counter
 
-A handheld, battery-powered Geiger counter built around the **ESP32-S3-WROOM-1** and a Soviet **SBM-20** Geiger–Müller tube. It has a firmware-regulated ~400 V supply, an audible click for each count, a 2.42" OLED display, and a single USB-C port for both charging and programming.
+A handheld, battery-powered Geiger counter built around the **ESP32-S3-WROOM-1** and a Soviet **SBM-20** Geiger–Müller tube. It has a firmware-regulated 400 V supply, an audible click for each count, a 2.42" OLED display, and a single USB-C port for both charging and programming.
 
 ![Avalanche32 PCB, top view](Images/3D/top.png)
 
