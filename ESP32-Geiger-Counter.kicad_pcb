@@ -2215,7 +2215,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c672c777-c157-467f-94fb-23dba4742df3")
+			(uuid "d1ca6275-3b7d-47ba-a428-5410a54786a0")
 			(effects
 				(font
 					(size 1 1)
@@ -2227,7 +2227,7 @@
 			(at 0.02 -7.69 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "c118a380-c45b-4483-bab5-792cb7bf7a8a")
+			(uuid "8de433ec-e9ed-4c1f-be85-8576a4ecc9ed")
 			(effects
 				(font
 					(size 1 1)
@@ -2240,7 +2240,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0351e895-7896-46b3-8da1-bec35a7180c3")
+			(uuid "7098e79b-7a05-4535-9bb3-ff3cda6fe653")
 			(effects
 				(font
 					(size 1 1)
@@ -2253,7 +2253,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab8d6667-2720-42ec-a7f2-0d3ca9597d00")
+			(uuid "88b8b229-e353-41b2-8594-429a86dbf1a5")
 			(effects
 				(font
 					(size 1 1)
@@ -2712,6 +2712,17 @@
 			(uuid "d1bf7039-9166-4935-8b43-041c44c42e82")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libs/SBM-20_Tube_3D/SBM-20_Tube_3529_Clips.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
@@ -9281,6 +9292,17 @@
 			(uuid "e4b243ff-5331-4cb1-81ac-576aa8dc640b")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libs/OLED_2.42in_SSD1309_3D/OLED_2.42in_SSD1309_SPI_7pin.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
