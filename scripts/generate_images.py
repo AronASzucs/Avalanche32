@@ -103,10 +103,20 @@ def run(cmd):
 def render_3d(cli, board, quality):
     out = IMAGES / "3D"
     out.mkdir(parents=True, exist_ok=True)
+    failed = []
     for i, (name, args, zoom, w, h) in enumerate(VIEWS_3D, 1):
         print(f"  [{i}/{len(VIEWS_3D)}] {name}")
-        run([cli, "pcb", "render", "--quality", quality, "--zoom", str(zoom),
-             "-w", str(w), "-h", str(h), *args, "-o", str(out / f"{name}.png"), str(board)])
+        png = out / f"{name}.png"
+        png.unlink(missing_ok=True)   # kicad-cli can exit 0 without writing (e.g. file open in a viewer)
+        # "high" forces KiCad's plated/bare copper mode, which draws all copper under the mask
+        # a fixed bare-copper brown; "user" (+ --floor) keeps the stackup finish colour instead
+        q = ["--quality", "user", "--floor"] if quality == "high" else ["--quality", quality]
+        run([cli, "pcb", "render", *q, "--zoom", str(zoom),
+             "-w", str(w), "-h", str(h), *args, "-o", str(png), str(board)])
+        if not png.is_file():
+            failed.append(name)
+    if failed:
+        print(f"  WARNING: not written: {', '.join(failed)} (close any viewer holding them and re-run)")
 
 
 VIEWBOX_RE = re.compile(r'viewBox="([-\d.eE]+)[ ,]+([-\d.eE]+)[ ,]+([-\d.eE]+)[ ,]+([-\d.eE]+)"')
