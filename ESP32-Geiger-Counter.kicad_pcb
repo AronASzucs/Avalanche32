@@ -2040,7 +2040,7 @@
 			(uuid "26b78644-afa7-4e7b-8bbc-13e82edb5839")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Keystone_5015_Micro_Mini.step"
+		(model "${KIPRJMOD}/libs/5015/5015.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2048,7 +2048,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -6867,7 +6867,7 @@
 		(property "Reference" "SENSE"
 			(at -0.007621 2.208364 0)
 			(layer "F.SilkS")
-			(uuid "e561968f-ca85-4c1d-aaf8-a516851927d5")
+			(uuid "51ac3038-27cd-456d-ad20-278c13e5cfa0")
 			(effects
 				(font
 					(size 1 1)
@@ -6878,7 +6878,7 @@
 		(property "Value" "HV_SENSE"
 			(at 0 2.25 0)
 			(layer "F.Fab")
-			(uuid "ec97186f-c069-484b-8e00-e020919bfa45")
+			(uuid "685cd01a-d3bd-42bc-9ec5-4b2839652649")
 			(effects
 				(font
 					(size 1 1)
@@ -6891,7 +6891,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e4010c4c-6552-48a5-885e-675cad23ae11")
+			(uuid "2c22c8ce-f3d5-4dee-88ec-61294c0bafa5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6904,7 +6904,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "04bd2860-97b7-48db-a0f7-845aaedc1ce6")
+			(uuid "157b4185-c8c5-4f7c-960c-7c98a0b40ee0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7008,7 +7008,7 @@
 			(uuid "640dca1b-8210-4c35-9152-bd1f3377dac1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Keystone_5015_Micro_Mini.step"
+		(model "${KIPRJMOD}/libs/5015/5015.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7016,7 +7016,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -14740,7 +14740,7 @@
 		(property "Reference" "GND"
 			(at 0.111699 -2.155984 0)
 			(layer "F.SilkS")
-			(uuid "132dbe6d-d9e1-4efc-918b-77dd54ca6607")
+			(uuid "dab27d8f-84e2-4600-9a8c-3cbda53a0761")
 			(effects
 				(font
 					(size 1 1)
@@ -14751,7 +14751,7 @@
 		(property "Value" "GND"
 			(at 0 2.25 0)
 			(layer "F.Fab")
-			(uuid "5a175a88-5067-4ff2-a72e-796aaa859df1")
+			(uuid "ae079ccc-73f0-4bac-9e92-423ccdcea437")
 			(effects
 				(font
 					(size 1 1)
@@ -14764,7 +14764,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f75c80ac-21df-44ad-864e-c49cea21483f")
+			(uuid "bedff042-48c2-498c-b27a-740eab39d4c6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14777,7 +14777,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3f08ba45-000d-4390-b755-a48e37bebac9")
+			(uuid "6d083352-8cac-49c9-a21d-cb3df6a66065")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14881,7 +14881,7 @@
 			(uuid "77c327d3-e382-4c05-a4ac-92d28830394d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Keystone_5015_Micro_Mini.step"
+		(model "${KIPRJMOD}/libs/5015/5015.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14889,7 +14889,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -18248,7 +18248,7 @@
 		(property "Reference" "PULSE"
 			(at 0.039169 -2.285471 0)
 			(layer "F.SilkS")
-			(uuid "4ef71141-6ed6-4dca-bf60-a66b34b9d13c")
+			(uuid "6db3bc01-d3db-4de2-bda9-c5ddc9d7df73")
 			(effects
 				(font
 					(size 1 1)
@@ -18259,7 +18259,7 @@
 		(property "Value" "PULSE"
 			(at 0 2.25 0)
 			(layer "F.Fab")
-			(uuid "437bc5e5-ca90-4e37-8e0b-0ec07d02fcf0")
+			(uuid "3c1e4b49-c3ca-4e23-b229-99bcf6cb44f5")
 			(effects
 				(font
 					(size 1 1)
@@ -18272,7 +18272,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1ebcae6d-bad9-4fd4-930a-30671732e460")
+			(uuid "d984c295-8780-42ac-972c-56e3e8da36f4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18285,7 +18285,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "257b9fff-846f-433d-97fc-2dc101abcb46")
+			(uuid "44c7898e-6754-4fe5-ae30-83fd9f7f4d77")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18389,7 +18389,7 @@
 			(uuid "b47f1203-e809-488c-bd2e-bdff4b2e8d9f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Keystone_5015_Micro_Mini.step"
+		(model "${KIPRJMOD}/libs/5015/5015.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18397,7 +18397,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
