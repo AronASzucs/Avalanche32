@@ -4,7 +4,7 @@ A handheld, battery-powered Geiger counter built around the **ESP32-S3-WROOM-1**
 
 ![Avalanche32 PCB, top view](Images/3D/top.png)
 
-> **Status: Rev A, in progress.** The perfboard prototype is working: it regulates the tube supply at 370–400 V, counts background radiation, and clearly detects real radioactive sources (see [Measurements](#measurements)). The Rev A schematic and PCB layout are complete and the fabrication files have been generated. Rev A boards have not yet been assembled or tested.
+> **Status: Rev A, in progress.** The perfboard prototype is working: it regulates the tube supply at 370–400 V, counts background radiation, and clearly detects real radioactive sources (see [Measurements](#measurements)). The Rev A schematic and PCB layout are complete, and the boards and parts have been ordered. Assembly and testing are next.
 
 | Front | Back |
 |---|---|
@@ -67,19 +67,21 @@ These readings are from the perfboard prototype, with each sample placed directl
 | Uranium glass plate | 300–400 | ~17× | ~1.7–2.3 |
 | Vintage radium-dial watch | 350–450 | ~20× | ~2.0–2.6 |
 | Watch + plate together | 550–650 | ~30× | ~3.1–3.7 |
+| Fiestaware red-orange saucer (uranium glaze) | ~8,700 | ~435× | ~50 |
+| Fiestaware cup resting on saucer | ~13,400 | ~670× | ~76 |
+
+Contact readings on glazed ceramics are mostly beta from the uranium decay chain, so the µSv/h values overstate the actual dose.
 
 ## Known Issue: Tube Re-Firing
 
-The current SBM-20 sometimes fails to quench. Instead of a single pulse, it fires a burst of 100–1000+ pulses spaced about 150–200 µs apart. Bursts become more frequent at higher voltage, which points to a degraded tube; a replacement is on order.
-
-As a workaround, the firmware has an optional burst filter (`BURST_FILTER`). A count only registers after 5 ms of quiet, so each burst counts once. Raw pulses and filtered counts are tracked separately for diagnostics.
+The current SBM-20 is degraded and sometimes fires a burst of 100–1000+ pulses instead of a single one. The firmware works around this with a burst filter (`BURST_FILTER`) that merges each burst into one count, at the cost of undercounting at very high rates. A replacement tube is on the way.
 
 ## Firmware
 
 `Firmware/HV_Test/HV_Test.ino` is a bench test for the HV supply and counting chain, written for the Arduino ESP32 core. It provides:
 
 - Hysteretic HV regulation (370 V setpoint, 5 V hysteresis) with a 460 V overvoltage shutdown.
-- An interrupt-driven pulse counter with the optional burst filter.
+- An interrupt-driven pulse counter with the optional burst filter (2.5 ms window).
 - A 60-second rolling CPM and an estimated µSv/h.
 - A 4 kHz piezo click for each count.
 - Serial output at 115200 baud showing HV, boost on-time, total and raw counts, CPM and µSv/h. To change the boost on-time, send a number from 5 to 120 (µs).
@@ -110,19 +112,20 @@ python scripts/generate_images.py
 - [x] HV boost designed and simulated in LTspice
 - [x] Perfboard HV prototype with regulation verified at 370–400 V
 - [x] SBM-20 background count test (15–25 CPM indoors)
-- [x] Source tests: uranium glass and radium-dial watch detected (up to ~30× background)
+- [x] Source tests: uranium glass, radium-dial watch and uranium-glazed Fiestaware detected (up to ~670× background)
 - [x] Bench-test firmware: hysteretic HV control, rolling CPM, µSv/h estimate, piezo click
 - [x] Full schematic: power, charger, ESP32-S3, HV supply, detector and display
 - [x] Rev A PCB layout and fabrication outputs
-- [ ] Rev A fabrication, assembly and bring-up
+- [x] Rev A boards and parts ordered
+- [ ] Rev A assembly and bring-up
 - [ ] Application firmware: OLED UI, menus, dose alarm, logging, battery monitoring
 
 ## Tools
 
 KiCad · LTspice · Arduino (ESP32 core) · C++
 
-## ⚠️ Safety
+## Safety
 
 This device generates **~400 V DC**. The stored energy is small, but do not touch the HV section while the unit is powered. Before handling the board, let the capacitors discharge: wait for the HV reading to fall to 0 V.
 
-Store radioactive test samples (radium dials, uranium glass) sealed and away from living spaces. Never open radium-dial watches or gauges.
+Store radioactive test samples (radium dials, uranium glass, uranium-glazed ceramics) sealed and away from living spaces. Never open radium-dial watches or gauges, and never eat or drink from uranium-glazed dishware.
